@@ -1,0 +1,42 @@
+<!-- 게시물 수정창 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+    <script src=/js/script.js></script>
+    <script src=/js/post.js></script>
+  </head>
+  <body>
+    <%- include('../partials/nav') %> 
+    <div class="container mb-3">
+
+      <input type="hidden" id="id" name="pid" value="<%= list.pid %>">
+
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" value="<%= list.title %>" class="form-control">
+      </div>
+        
+      <div class="form-group">
+        <label for="body">Text</label>
+        <textarea id="text" name="text" rows="7" class="form-control"><%= list.text %></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="text" id="date" name="date" value="<%= my_time %>" class="form-control" readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Writer</label>
+        <input type="text" id="writer" name="writer" value="<%= info %>" class="form-control" readonly>
+      </div>       
+      
+      <div class="post-button">
+        <a class="btn btn-success" onclick="goBack()">Back</a> <!--뒤로가기-->
+        <button type="button" id="post_edit" class="btn btn-primary">Submit</button> <!--제출-->
+      </div>
+
+    </div>    
+    </body>
+</html>

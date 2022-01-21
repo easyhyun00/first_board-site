@@ -1,0 +1,149 @@
+/*링크에 밑줄 제거*/
+a{
+  text-decoration:none !important; 
+}
+
+body{
+  /* 아래 스크롤 없애기 */
+  overflow-x: hidden;
+}
+
+/*Home, Login, Join, Search*/
+*{
+  margin: 0px; 
+  padding: 0px;
+}
+.main_header{
+  border: 1px solid midnightblue;
+  background-color: midnightblue;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+#header_home{
+  /* margin-left: 30px; */
+  position: relative;
+  bottom: 2px;
+  left: 30px;
+}
+#header_home > a{
+  color: white;
+}
+.main_postmenu{
+  position: relative; 
+  float:left;
+  bottom: 45px;
+  left: 160px;  
+}
+.main_postmenu > a{
+  color:silver;
+  font-size: 25px;  
+}
+.main_topmenu{
+  position: relative;
+  color: white; 
+  float:right;
+  bottom: 50px;
+  right: 30px;
+}
+
+/*메인 홈*/
+.main_comment{
+  text-align: center;
+}
+
+
+
+/* Search */
+.search_content{
+  position: relative; 
+  float:inline-end;
+  left: 30px;
+}
+#search{
+  width: 500px;
+  font-size: 20px;
+  padding-bottom: 1px; 
+}
+
+/*본문*/
+.content{
+  border: 1px solid midnightblue;  
+  margin-top: 5px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+/*본문검색*/
+#container{
+  width: 1000px; margin: 0 auto;
+}
+#container #input-form{
+  text-align: center;
+}
+#user-table{
+  margin: 0 auto; 
+  text-align:center;
+  width: 600px;
+}
+#input-form{
+  margin-top: 10px; margin-bottom: 10px;
+}
+#user-table{
+  border-collapse: collapse;
+  padding-left: 20px;
+}
+#user-table > thead > tr{
+   background-color: midnightblue; color:#fff; 
+  }
+#user-table > thead > tr > th{
+   padding: 8px; width: 150px; 
+}
+#user-table > tbody > tr > td{
+   border-bottom: 1px solid midnightblue;
+   padding:8px; 
+}
+#write{
+  position: relative; 
+  float:right;  
+  padding-top: 20px;
+  padding-left: 0px;
+}
+
+/*글쓰기 창*/
+.post-button{
+  margin-top: 10px;
+}
+
+/*글쓰기 창, 수정창*/
+.container{
+  margin-top: 20px;
+}
+
+/*댓글삭제수정버튼*/
+.comment_button{
+  position: relative; 
+  float:right;
+}
+
+/* 로그인 회원가입 글씨 */
+.login_join_text{
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#edit_page{
+  color:white;
+}
+
+.post-button{
+  color: white;
+}
+
+.commnets > tbody > tr >td{
+  padding: 5px;
+}
+
+#paging{
+  padding-top: 25px;
+  padding-left: 270px;
+}

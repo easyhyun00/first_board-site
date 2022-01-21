@@ -1,0 +1,22 @@
+<!-- 작성한 게시물, 댓글 보는 페이지 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('../partials/head') %>
+  <script src=/js/script.js></script>
+  <script src=/js/post.js></script>
+  <script src=/js/comment.js></script>
+</head>
+
+<body>
+  <%- include('../partials/nav') %>
+    <div class="container mb-3">
+      <!-- 작성한 게시물 -->
+      <%- include('../partials/post_show') %>
+      
+      <!-- 댓글창 -->
+      <%- include('../partials/comment') %>
+    </div>
+</body>
+</html>

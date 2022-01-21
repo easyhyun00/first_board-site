@@ -1,0 +1,28 @@
+{
+    "user_data": [
+        {
+            "email": "abc@gm",
+            "psw": "123"
+        },
+        {
+            "email": "123@gm",
+            "psw": "123"
+        },
+        {
+            "email": "aaa@gm",
+            "psw": "123"
+        },
+        {
+            "email": "111@gm",
+            "psw": "123"
+        },
+        {
+            "email": "bb@gm",
+            "psw": "123"
+        },
+        {
+            "email": "leejh123@gmail.com",
+            "psw": "123"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+<!-- 댓글 다는 창 -->
+<br>
+
+
+<input type="hidden" id="Cid" name="cid" value="<%= next_cid %>"> 
+<input type="hidden" id="Cwriter" name="writer" value="<%= info %>"> 
+<input type="hidden" id="Cdate" name="date" value="<%= my_time %>">
+
+<div class="row">
+    <div class="col-11">
+        <!-- <input type="text" id="comment" name="comment" value="" class="form-control" required> -->
+        <textarea id="comment" name="comment" class="form-control" rows="1"></textarea>
+    </div>
+    <div class="col-1">
+        <button type="button" id="comment_new" class="btn btn-primary">Comment</button>
+    </div>
+</div> 
+    
+
+    

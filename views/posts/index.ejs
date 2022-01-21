@@ -1,0 +1,78 @@
+<!--post 목록, 로그인 전(게시물 작성, 보기 권한X 등)-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+    <script src=/js/script.js></script>
+  </head>
+  <body>
+        <!--헤더영역-->
+            <% if(info == undefined){ %> <!--  로그인 전 -->
+                <%- include('../partials/nav_before') %>
+            <% } else{ %> <!--  로그인 후 -->
+              <%- include('../partials/nav') %> 
+            <% } %>
+        <!--본문영역-->
+        <main id="container">
+            <div id="input-form">
+                검색할 제목 : <input type="text" id="keyword" />
+                개수: <span class="count"></span>
+            </div>    
+            <table id="user-table">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성일</th>
+                        <th>작성자</th>
+                    </tr>
+                </thead>    
+                <tbody>
+                    <% for(var i = 0 ; i < list.length; i++){ %>
+                        <tr>
+                        <td><%= i + 1 + start %></td>
+                        <% if(info == undefined){ %> <!--  로그인 전 -->
+                            <td><a href="#" onclick="alert('로그인 후 이용하시오.')"><%= list[i].title %></a></td>
+                        <% } else{ %> <!--  로그인 후 -->
+                            <td><a href="/posts/member/<%= list[i].pid %>"><%= list[i].title %></a></td>
+                        <% } %>
+                        <td><%= list[i].date %></td>
+                        <td><%= list[i].writer %></td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+            <!--글쓰기 창-->
+            <div class="col-3" id="write">
+                <% if(info == undefined){ %> <!--  로그인 전 -->
+                    <a href="#" onclick="alert('로그인 후 이용하시오.')" class="btn btn-primary">Write</a>
+                <% } else{ %> <!--  로그인 후 -->
+                    <a href="/posts/member/new" class="btn btn-primary">Write</a>
+                <% } %>
+            </div>
+            <!--페이징-->
+            <nav class="col-9" id="paging">
+                <% 
+                var offset = 2; 
+                var previousBtnEnabled = currentPage>1;
+                var nextBtnEnabled = currentPage<maxPage;
+                %> 
+                <ul class="pagination pagination-sm justify-content-center align-items-center h-100 mb-0">            
+                    <li class="page-item <%= previousBtnEnabled?'':'disabled' %>">
+                    <a class="page-link" href="/index?page=<%= currentPage-1 %>" <%= previousBtnEnabled?'':'tabindex=-1' %>>«</a>
+                </li>
+                <% for(i=1;i<=maxPage;i++){ %>
+                <% if(i==1 || i==maxPage || (i>=currentPage-offset && i<=currentPage+offset)){ %>
+                    <li class="page-item <%= currentPage==i?'active':'' %>"><a class="page-link" href="/index?page=<%= i %>"> <%= i %> </a></li>
+                <% } else if(i==2 || i==maxPage-1){ %>
+                    <li><a class="page-link">...</a></li>
+                <% } %>
+                <% } %>
+                <li class="page-item <%= nextBtnEnabled?'':'disabled' %>">
+                <a class="page-link" href="/index?page=<%= currentPage+1 %>" <%= nextBtnEnabled?'':'tabindex=-1' %>>»</a>
+                </li>
+                </ul>
+            </nav>
+        </main>
+  </body>
+</html>

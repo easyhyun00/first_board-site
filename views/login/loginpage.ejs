@@ -1,0 +1,29 @@
+<!-- 로그인 페이지 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head') %>
+        <script src=/js/script.js></script>
+        <script src=/js/user.js></script> 
+    </head>
+    <body>      
+        <!-- 헤더영역 -->
+        <%- include('../partials/nav_before') %>  
+        <!-- 본문영역 -->
+        <div class="container mb-3">   
+            <h1 class="login_join_text">Login</h1>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required> 
+            </div>
+            <div class="form-group">
+                <label for="psw">PassWord</label>
+                <input type="password" class="form-control" id="psw" name="psw" placeholder="PassWord" required> 
+            </div>
+            <div class="submit">
+                <button class="btn btn-success" onclick="goBack()">Back</button> <!--뒤로가기-->
+                <button type="button" id="login_check" class="btn btn-primary">Login</button> 
+            </div>
+        </div>
+    </body>
+</html>

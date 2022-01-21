@@ -1,0 +1,30 @@
+<!-- 로그인전 홈페이지 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+  </head>
+  <body>
+        <!--헤더영역-->
+          <% if(info == undefined){ %> <!--  로그인 전 -->
+            <%- include('../partials/nav_before') %>
+          <% } else{ %> <!--  로그인 후 -->
+            <%- include('../partials/nav') %> 
+          <% } %>
+        <!--본문영역-->
+        <div class="container mb-3">
+            <div class="jumbotron">
+                <div class="main_comment">
+                  <h1>My Website</h1>
+                  <% if(info == undefined){ %> <!--  로그인 전 -->
+                    <P>Welcome to my website!</p>
+                    <p class="main_write"><a href="/index" class="btn btn-primary btn-lg">Go!</a></p>
+                  <% } else{ %> <!--  로그인 후 -->
+                    <P>Welcome to my website, <%=info%>!</p>
+                    <p class="main_write"><a href="/index/member" class="btn btn-primary btn-lg">Go!</a></p>
+                  <% } %>
+                </div>
+            </div>
+          </div>
+  </body>
+</html>

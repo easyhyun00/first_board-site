@@ -1,0 +1,37 @@
+<!-- 회원가입 페이지 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+    <script src=/js/script.js></script>
+    <script src=/js/user.js></script> 
+  </head>
+  <body>
+    <!--헤더영역 -->
+    <%- include('../partials/nav_before') %>
+    <!-- 본문영역 -->
+    <div class="container mb-3">
+      <h1 class="login_join_text">Sign Up</h1>
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" id="email" name="email" value="" class="form-control" placeholder="Email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="PassWord">PassWord</label>
+          <input type="password" id="psw" name="psw" value="" class="form-control" placeholder="PassWord" required>
+        </div>
+
+        <!-- 위에 적은 psw와 같은지 다른지 비교해야함-->
+        <div class="form-group">
+          <label for="_PassWord">*PassWord Confirm</label>
+          <input type="password" id="_psw" name="_psw" value="" class="form-control" placeholder="Enter password one more time" required>
+        </div>         
+
+        <div class="join-button">
+          <button class="btn btn-success" onclick="goBack()">Back</button>
+          <button type="button" id="join_new" class="btn btn-primary">Join</button> 
+        </div>
+    </div>    
+    </body>
+</html>

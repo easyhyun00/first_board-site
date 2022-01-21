@@ -1,0 +1,80 @@
+{
+    "2": [
+        {
+            "pid": "2",
+            "cid": "1",
+            "writer": "aaa@gm",
+            "comment": "멋져요",
+            "date": "2022-01-19 09:19:31"
+        },
+        {
+            "pid": "2",
+            "cid": "2",
+            "writer": "abc@gm",
+            "comment": "좋아요",
+            "date": "2022-01-20 15:23:57"
+        }
+    ],
+    "4": [
+        {
+            "pid": "4",
+            "cid": "1",
+            "writer": "abc@gm",
+            "comment": "좋아요",
+            "date": "Edit : 2022-01-20 15:05:35"
+        },
+        {
+            "pid": "4",
+            "cid": "2",
+            "writer": "aaa@gm",
+            "comment": "굿",
+            "date": "2022-01-19 09:19:52"
+        },
+        {
+            "pid": "4",
+            "cid": "3",
+            "writer": "leejh123@tecace.com",
+            "comment": "멋져요",
+            "date": "Edit : 2022-01-20 16:09:56"
+        }
+    ],
+    "5": [
+        {
+            "pid": "5",
+            "cid": "1",
+            "writer": "leejh123@tecace.com",
+            "comment": "댓글",
+            "date": "2022-01-20 15:45:48"
+        },
+        {
+            "pid": "5",
+            "cid": "2",
+            "writer": "leejh123@tecace.com",
+            "comment": "안녕하세요",
+            "date": "2022-01-20 15:57:45"
+        }
+    ],
+    "6": [
+        {
+            "pid": "6",
+            "cid": "1",
+            "writer": "abc@gm",
+            "comment": "멋져요",
+            "date": "2022-01-19 09:17:14"
+        },
+        {
+            "pid": "6",
+            "cid": "2",
+            "writer": "123@gm",
+            "comment": "최고!!",
+            "date": "Edit : 2022-01-19 14:48:58"
+        },
+        {
+            "pid": "6",
+            "cid": "3",
+            "writer": "abc@gm",
+            "comment": "좋아요",
+            "date": "2022-01-20 15:27:17"
+        }
+    ]
+}

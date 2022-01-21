@@ -1,0 +1,19 @@
+<!--로그인 후 nav-->
+
+<!--헤더영역-->
+<header class="main_header">
+    <!--홈-->
+    <h1 id="header_home"><a href="/member">Home</a></h1>
+    <!--게시판 메뉴-->
+    <div class="main_postmenu">
+        <a href="/index/member">Post</a>
+    </div>
+    <!--탑메뉴-->
+    <div class="main_topmenu">
+        <form action="/login/out" method="POST">
+            <button type="submit" class="btn btn-outline-light" onclick="if(!confirm('로그아웃 하시겠습니까?')){return false;}">Logout</button>
+            <a href="#" class="btn btn-outline-light" onclick="alert('로그아웃 후 회원가입 하시오.')">Join</a> 
+            <a href="/my" class="btn btn-outline-light">My</a>
+        </form>
+    </div>
+</header>

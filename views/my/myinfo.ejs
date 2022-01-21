@@ -1,0 +1,23 @@
+<!--내 정보-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+    <script src=/js/script.js></script>
+  </head>
+  <body>
+    <%- include('../partials/nav') %> 
+    
+    <div class="container mb-3">
+        <div class="form-group">
+          <h1 class="login_join_text">MY</h1>
+          <label for="Email">email</label>
+          <input type="text" id="email" name="email" value="<%= info %>" class="form-control" readonly>
+        </div>
+    
+        <div class="mt-3">
+          <button class="btn btn-success" onclick="goBack()">Back</button>
+        </div>
+      </div>
+  </body>
+</html>
