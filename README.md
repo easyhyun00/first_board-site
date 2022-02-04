@@ -8,3 +8,5 @@ npm install
 node index.js
 ```
 http://localhost:4000/
+
+검색 기능 수정 전
