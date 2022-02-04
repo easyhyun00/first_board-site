@@ -3,3 +3,8 @@
 + sign up, login	
 + post write, edit, delete
 + commnet write, edit, delete
+```
+npm install
+node index.js
+```
+http://localhost:4000/
